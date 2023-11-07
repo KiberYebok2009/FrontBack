@@ -2,56 +2,72 @@ body{
     margin: 0px;
     background-color:black;
 }
-.container-1{
+.first1{
     background-color: purple;
     margin: 20px ;
-    border-radius: 50px;
+    border-radius: 20px;
+}
+.second1{
+    background-color: red;
+    margin: 20px ;
+    border-radius: 20px;
+}
+.btn{
+    background: transparent;
+    border: none !important;
+    font-size:0;
 }
 .logo{
-    height: 50px;
-    width: 50px;
-    margin-right: 5vh;
-    padding-bottom: 10px;
+    height: 60px;
+    width: 60px;
+    margin-right: 2vw;
 }
 .cart-icon{
     height: 50px;
     width: 50px;
 }
+.header-line{
+    width: 100vw;
+}
 .nav{
     text-decoration: none;
     color: black;
-    margin-right: 5vh;
+    margin-right: 2vw;
     font-size: 20px;
     font-weight: 700;
     font-family: 'Autour One', cursive;
+    transition: 1s;
 }
-.account{
-    margin-left:550px;
-    display: flex;
+.nav:hover{
+    color:azure;
+    font-size: 25px;
 }
 .registration{
     text-decoration: none;
     color: black;
     font-size: 20px;
-    margin-right: 25px;
+    margin-right: 5vh;
     background-color: pink;
     padding:10px;
     border-radius: 10px;
     border-color: black;
     font-weight: 500;
     font-family: 'Comfortaa', cursive;
+    margin-left: 82%;
+    position: absolute;
 }
 .enter{
     text-decoration: none;
     color: black;
     font-size: 20px;
-    margin-right: 50px;
     background-color: pink;
     padding:10px;
     border-radius: 10px;
     border-color: black;
     font-weight: 500;
     font-family: 'Comfortaa', cursive;
+    margin-left: 76%;
+    position: absolute;
 }
 .header-line{
     padding-top: 15px;
@@ -64,26 +80,6 @@ body{
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    padding-right: 8%;
-    padding-left: 8%;
-    gap: 10px;
-    top: 30px;
-    margin-bottom:30px;
-}
-.packages-3{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 25%);
-    padding-right: 8%;
-    padding-left: 8%;
-    gap: 10px;
-    top: 30px;
-    margin-bottom:30px;
-}
-.packages-1{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(1, 25%);
     padding-right: 8%;
     padding-left: 8%;
     gap: 10px;
@@ -103,11 +99,17 @@ body{
     background-color: cornflowerblue;
     transform: scale(1.1);
 }
-.container-2{
+.first2{
     background-color: purple;
     margin: 20px ;
-    border-radius: 50px;
-    height: 2700px;
+    border-radius: 20px;
+    padding-bottom:40px;
+}
+.second2{
+    background-color: red;
+    margin: 20px ;
+    border-radius: 20px;
+    padding-bottom:40px;
 }
 .product-icon{
     height: 200px;
@@ -122,7 +124,8 @@ body{
 }
 .price-product{
     text-align: left;
-    bottom: 0%;
+    position:absolute;
+    bottom:-5px;
 }
 a{
     text-decoration: none;
@@ -131,10 +134,16 @@ h1{
     text-align: center;
     padding-top: 30px;
 }
-.container-3{
+.first3{
     background-color: purple;
     margin: 20px ;
-    border-radius: 50px;
+    border-radius: 20px;
+    height: 150px;
+}
+.second3{
+    background-color: red;
+    margin: 20px ;
+    border-radius: 20px;
     height: 150px;
 }
 .list, li{
@@ -142,7 +151,13 @@ h1{
     font-size: 20px;
     margin-bottom: 10px;
 }
-list, a{
+.list, a{
     color: black;
     text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width:0px;
 }
