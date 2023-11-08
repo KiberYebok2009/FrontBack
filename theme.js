@@ -4,6 +4,7 @@ let main = document.querySelector('.container-2')
 let footer = document.querySelector('.container-3')
 const image = document.querySelector('.logo');
 let line = document.querySelector('.header-line');
+let body = document.querySelector('body');
 
 button.onclick = function(){
     header.classList.toggle('first1')
@@ -17,6 +18,7 @@ button.onclick = function(){
         image.setAttribute('src', '../images/amnyam.webp');
         image.style.borderRadius = "0%";
         image.style.marginTop = "0px";
+        body.style.backgroundColor = "white";
     }
     else{
         image.setAttribute('src', '../images/ЧВК.webp');
@@ -24,6 +26,6 @@ button.onclick = function(){
         image.style.height = "60px";
         image.style.borderRadius = "50%";
         image.style.marginRight = "2vw" ;
-
+        body.style.backgroundColor = "black";
     }
 }
