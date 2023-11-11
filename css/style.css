@@ -9,11 +9,13 @@ body{
     background-color: #7A08FA;
     margin: 20px ;
     border-radius: 10px;
+    border: solid black 5px;
 }
 .second1{
     background-color: red;
     margin: 20px ;
     border-radius: 10px;
+    border: solid black 5px;
 }
 /* ------------------------------------------------ */
 
@@ -30,9 +32,9 @@ body{
     text-decoration: none;
     color: black;
     margin-right: 2vw;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 700;
-    font-family: 'Autour One', cursive;
+    font-family: 'Oswald', sans-serif;
     transition: 1s;
 }
 .nav:hover{
@@ -89,7 +91,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 20%);
     padding-right: 4vw;
-    padding-left: 5vw;
+    padding-left: 3vw;
     gap: 10px;
     top: 10px;
     margin-bottom:30px;
@@ -104,6 +106,7 @@ body{
     padding: 10px;
     transition: 1s;
     margin-top: 20px;
+    border: solid black 5px;
 }
 .package:hover{
     transform: scale(1.1);
@@ -118,14 +121,17 @@ body{
 }
 .name-product{
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 18px;
     height: 5vh;
     margin-top: 5px;
     margin-bottom: 20px;
+    font-family: 'Agbalumo', cursive;
 }
 .price-product{
     text-align: left;
     font-weight: 700;
+    font-family: 'Oswald', sans-serif;
 }
 /* ------------------------------------------------ */ 
 
@@ -135,12 +141,14 @@ body{
     margin: 20px ;
     border-radius: 10px;
     padding-bottom:40px;
+    border: solid black 5px;
 }
 .second2{
     background-color: red;
     margin: 20px ;
     border-radius: 10px;
     padding-bottom:40px;
+    border: solid black 5px;
 }
 /* ---------------------------------------------------- */
 a{
@@ -149,6 +157,8 @@ a{
 h1{
     text-align: center;
     padding-top: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
 }
 /* ----------------------------------------- footer theme */
 .first3{
@@ -156,18 +166,22 @@ h1{
     margin: 20px ;
     border-radius: 10px;
     height: 150px;
+    border: solid black 5px;
 }
 .second3{
     background-color: red;
     margin: 20px ;
     border-radius: 10px;
     height: 150px;
+    border: solid black 5px;
 }
 /* ------------------------------------------------------ */
 .list, li{
     padding-top: 10px;
     font-size: 20px;
     margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
 }
 .list, a{
     color: black;
@@ -183,7 +197,7 @@ html::-webkit-scrollbar{
     .packages{
         grid-template-columns: repeat(3, 33%);
         padding-right: 4vw;
-        padding-left: 5vw;
+        padding-left: 4vw;
     }
     .package{
         width: 180px;
@@ -196,5 +210,9 @@ html::-webkit-scrollbar{
     }
     .name-product{
         height: 3vh;
+        font-size: 14px;
+    }
+    .price-product{
+        font-size: 14px;
     }
 }
