@@ -15,7 +15,7 @@ body{
     background-color: red;
     margin: 20px ;
     border-radius: 10px;
-    border: solid black 5px;
+    border: solid white 5px;
 }
 /* ------------------------------------------------ */
 
@@ -32,7 +32,7 @@ body{
     text-decoration: none;
     color: black;
     margin-right: 2vw;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
     transition: 1s;
@@ -97,7 +97,7 @@ body{
     margin-bottom:30px;
     text-align: center;
 }
-.package{
+.first4{
     color:black;
     background-color: white;
     height: 300px;
@@ -107,6 +107,19 @@ body{
     transition: 1s;
     margin-top: 20px;
     border: solid black 5px;
+}
+.second4{
+    color:black;
+    background-image: url('../images/disguise3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 220px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 1s;
+    margin-top: 20px;
+    border: solid white 5px;
 }
 .package:hover{
     transform: scale(1.1);
@@ -148,7 +161,7 @@ body{
     margin: 20px ;
     border-radius: 10px;
     padding-bottom:40px;
-    border: solid black 5px;
+    border: solid white 5px;
 }
 /* ---------------------------------------------------- */
 a{
@@ -173,7 +186,7 @@ h1{
     margin: 20px ;
     border-radius: 10px;
     height: 150px;
-    border: solid black 5px;
+    border: solid white 5px;
 }
 /* ------------------------------------------------------ */
 .list, li{
