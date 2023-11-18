@@ -91,11 +91,93 @@ body{
     height: 150px;
     border: solid white 5px;
 }
+.comments{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    padding-right: 4vw;
+    padding-left: 3vw;
+    gap: 10px;
+    top: 10px;
+    margin-bottom:30px;
+    text-align: center;
+}
+.comm-line{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border: solid black 5px;
+    border-radius: 10px;
+}
+.first4{
+    color:black;
+    background-color: white;
+    height: 300px;
+    width: 220px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border: solid black 5px;
+}
+.second4{
+    color:white;
+    background-image: url('../images/disguise3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 220px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border: solid white 5px;
+}
+h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+.avotar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid 3px black;
+    margin-right: 2vw;
+    margin-left: 1vw;
+}
+.nik{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: Oswald, sans-serif;
+}
+.comm{
+    font-weight: 700;
+    text-align: left;
+    font-size: 26px;
+    font-family: Oswald, sans-serif;
+    margin-top: 10px;
+    padding-left: 1vw;
+    border-radius: 10px;
+    border: solid black 5px;
+    height: 200px;
+}
 html::-webkit-scrollbar{
     width:0px;
 }
 @media screen and (max-width: 800px) {
     .chipizdrik{
         margin:10px;
+    }
+    .comments{
+        grid-template-columns: repeat(3, 33%);
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+    .comment{
+        width: 180px;
+        height: 230px;
+        padding: 10px;
+    }
+    .comm{
+        height: 130px;
     }
 }
