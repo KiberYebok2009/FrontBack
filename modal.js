@@ -3,6 +3,7 @@ let name = document.querySelectorAll('.name-product');
 let emptyicon = document.querySelector('.empty-icon');
 let emptyprice = document.querySelector('.price-empty');
 let emptyname = document.querySelector('.empty-name');
+let treasure = document.querySelector('.treasure');
 var ind = {val: 0};
 var buttons = document.querySelectorAll(".but");
 buttons.forEach(function(button) {
@@ -15,6 +16,9 @@ buttons.forEach(function(button) {
         emptyicon.setAttribute('src', newicon);
         emptyname.textContent = name[ind.val].textContent;
         emptyprice.textContent = price[ind.val].textContent; 
+        if (ind.val > 12){
+            treasure.textContent = "Treasure: Collector's cache 2022 II"
+        }
 
 // Получить элемент <span>, который закрывает модальный
         var span = document.getElementsByClassName("close")[0];

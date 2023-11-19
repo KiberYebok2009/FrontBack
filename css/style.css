@@ -159,9 +159,11 @@ body{
     color:black;
     background-color: white;
     height: 300px;
-    width: 220px;
+    width: 300px;
     border-radius: 10px;
-    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
     margin-top: 20px;
     /* margin-left: 200px; */
 }
@@ -215,6 +217,20 @@ body{
     margin-left: 20px;
     margin-top: 0px;
     margin-bottom: 10px;
+}
+.treasure{
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.data{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
 }
 /* ------------------------------------------------ */ 
 
@@ -304,7 +320,7 @@ html::-webkit-scrollbar{
         width: 250px;;
     }
     .empty-name{
-        font-size: 18px;
+        font-size: 22px;
     }
     .item-line{
         width: 500px;
@@ -314,13 +330,19 @@ html::-webkit-scrollbar{
         width: 250px;
     }
     .price-empty{
-        font-size: 18px;
+        font-size: 22px;
     }
     .rare{
-        font-size: 18px;
+        font-size: 22px;
     }
     .rar{
-        font-size: 18px;
+        font-size: 22px;
+    }
+    .treasure{
+        font-size: 22px;
+    }
+    .data{
+        font-size: 22px;
     }
 }
 /* Модальный (фон) */
@@ -335,17 +357,6 @@ html::-webkit-scrollbar{
     overflow: auto; /* Включите прокрутку, если это необходимо */
     background-color: rgb(0,0,0); /* Цвет запасной вариант */
     background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
-}
-  
-  /* Модальное содержание/коробка */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% сверху и по центру */
-    padding: 20px;
-    border: 1px solid black;
-    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
-    height: 440px;
-    text-align: center;
 }
   
   /* Кнопка закрытия */
@@ -370,18 +381,24 @@ html::-webkit-scrollbar{
     background-color: #7A08FA;
     color: white;
 }
-  
-  /* Модальное тело */
-
-/* .modal-body {padding: 2px 16px;} */
-  
   /* Модальный нижний колонтитул */
 
-/* .modal-footer {
+.modal-footer {
+    height:90px;
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #7A08FA;
     color: white;
-} */
+}
+
+  /* Модальное содержание/коробка */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+    text-align: center;
+}
   
   /* Модальное содержание */
 .modal-content {
