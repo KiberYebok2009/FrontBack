@@ -1,3 +1,9 @@
+:root{
+    --width-size: calc(10vw + 10vw);
+    --height-size: calc(13vw + 13vw);
+    --icon-height-size: calc(12vw + 12vw);
+    --font-size: calc(1vw + 1vw);
+}
 body{
     margin: 0px;
     background-color:white;
@@ -31,7 +37,7 @@ body{
     text-decoration: none;
     color: black;
     margin-right: 2vw;
-    font-size: 26px;
+    font-size: calc(var(--font-size)*1);
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
     transition: 1s;
@@ -94,18 +100,20 @@ body{
     gap: 10px;
     top: 10px;
     margin-bottom:30px;
+    margin-right: 20px;
+    margin-left: 15px;
     text-align: center;
 }
 .first4{
     color:black;
     background-color: white;
-    height: 300px;
-    width: 220px;
+    height: calc(var(--height-size)*0.75);
+    width: calc(var(--width-size)*0.7);
     border-radius: 10px;
     padding: 10px;
     transition: 1s;
     margin-top: 20px;
-    border: solid black 5px;
+    border: solid black calc(var(--font-size)*0.2);
     text-align: center;
 }
 .second4{
@@ -113,21 +121,21 @@ body{
     background-image: url('../images/disguise3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
-    width: 220px;
+    height: calc(var(--height-size)*0.75);
+    width: calc(var(--width-size)*0.7);
     border-radius: 10px;
     padding: 10px;
     transition: 1s;
     margin-top: 20px;
-    border: solid white 5px;
+    border: solid white calc(var(--font-size)*0.2);
     text-align: center;
 }
 .package:hover{
     transform: scale(1.1);
 }
 .product-icon{
-    height: 200px;
-    width: 200px;
+    height: calc(var(--icon-height-size)*0.5);
+    width: calc(var(--width-size)*0.6);
     margin: 10px;
     margin-bottom: 0px;
     border-radius: 10px;
@@ -136,16 +144,16 @@ body{
 .name-product{
     text-align: center;
     font-weight: 400;
-    font-size: 18px;
-    height: 30px;
+    font-size: calc(var(--font-size)*0.6);
+    height: calc(var(--width-size)*0.15);
     margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: calc(var(--width-size)*0.07);
     font-family: 'Agbalumo', cursive;
 }
 .price-product{
     text-align: left;
     font-weight: 700;
-    font-size: 16px;
+    font-size: calc(var(--font-size)*0.5);
     font-family: 'Oswald', sans-serif;
     letter-spacing: 3px;
     margin-top: 0px;
@@ -163,8 +171,8 @@ body{
 .empty{
     color:black;
     background-color: white;
-    height: 250px;
-    width: 250px;
+    height: calc(var(--icon-height-size)*0.7);
+    width: calc(var(--width-size)*0.8);
     border-radius: 10px;
     margin-bottom: 30px;
     margin-left: 10px;
@@ -173,29 +181,29 @@ body{
     /* margin-left: 200px; */
 }
 .empty-icon{
-    height: 250px;
-    width: 250px;
-    border: solid black 5px;
+    height: calc(var(--icon-height-size)*0.7);
+    width: calc(var(--width-size)*0.8);
+    border: solid black calc(var(--font-size)*0.2);
+    margin-right: calc(var(--width-size)*0.1);
     border-radius: 10px;
 }
 .price-empty{
     text-align: left;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
-    font-size: 28px;
+    font-size: calc(var(--font-size)*1);
     margin-top: 0px;
     margin-bottom: 20px;
     margin-right: 20px;
-    margin-left: 20px;
     text-align: left;
 }
 .empty-name{
     text-align: left;
     font-weight: 700;
-    font-size: 28px;
+    width: calc(var(--width-size)*2);
+    font-size: calc(var(--font-size)*1);
     margin-top: 5px;
     margin-right: 20px;
-    margin-left: 20px;
     margin-bottom: 10px;
     font-family: 'Oswald', sans-serif;
 }
@@ -208,7 +216,7 @@ body{
     text-align: left;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: calc(var(--font-size)*1);
     margin-left: 5px;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -218,24 +226,23 @@ body{
     text-align: left;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 28px;
-    margin-left: 20px;
+    font-size: calc(var(--font-size)*1);
     margin-top: 0px;
     margin-bottom: 10px;
 }
 .treasure{
     text-align: left;
+    width: calc(var(--width-size)*2);
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 28px;
-    margin-left: 20px;
+    font-size: calc(var(--font-size)*1);
     margin-top: 0px;
     margin-bottom: 10px;
 }
 .data{
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: calc(var(--font-size)*1);
 }
 .grid{
     width: 400px;
@@ -300,6 +307,66 @@ html{
 html::-webkit-scrollbar{
     width:0px;
 }
+@media screen and (max-width: 1150px) {
+    .packages{
+        grid-template-columns: repeat(4, 25%);
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+    .package{
+        height: calc(var(--height-size)*0.8);
+        width: calc(var(--width-size)*0.8);
+        padding: 10px;
+    }
+    .product-icon{
+        height: calc(var(--icon-height-size)*0.5);
+        width: calc(var(--width-size)*0.6);
+    }
+    .name-product{
+        font-size: calc(var(--font-size)*0.7);
+        height: calc(var(--width-size)*0.25);
+        margin-bottom: calc(var(--width-size)*0.01);
+    }
+    .price-product{
+        font-size: calc(var(--font-size)*0.7);
+    }
+    .empty-icon{
+        height: calc(var(--icon-height-size)*0.7);
+        width: calc(var(--width-size)*0.8);
+    }
+    .empty-name{
+        font-size: calc(var(--font-size)*1);
+    }
+    .item-line{
+        width: 500px;
+    }
+    .empty{
+        height: calc(var(--icon-height-size)*0.7);
+        width: calc(var(--width-size)*0.8);
+    }
+    .price-empty{
+        font-size: calc(var(--font-size)*1);
+    }
+    .rare{
+        font-size: calc(var(--font-size)*1);
+    }
+    .rar{
+        font-size: calc(var(--font-size)*1);
+    }
+    .treasure{
+        font-size: calc(var(--font-size)*1);
+    }
+    .data{
+        font-size: calc(var(--font-size)*1);
+    }
+    .grid{
+        width: 240px;
+    }
+    .item-line{
+        width: calc(var(--width-size)*3);
+    }
+}
+
 @media screen and (max-width: 800px) {
     .packages{
         grid-template-columns: repeat(3, 33%);
@@ -307,54 +374,56 @@ html::-webkit-scrollbar{
         padding-left: 4vw;
     }
     .package{
-        width: 180px;
-        height: 230px;
+        height: calc(var(--height-size)*1.1);
+        width: calc(var(--width-size)*1.1);
         padding: 10px;
     }
     .product-icon{
-        width: 150px;
-        height: 150px;
+        height: calc(var(--icon-height-size)*0.8);
+        width: calc(var(--width-size)*0.9);
     }
     .name-product{
-        height: 20px;
-        font-size: 14px;
-        margin-bottom: 25px;
+        font-size: calc(var(--font-size)*0.9);
+        height: calc(var(--width-size)*0.25);
+        margin-bottom: calc(var(--width-size)*0.01);
     }
     .price-product{
-        font-size: 14px;
-        width: 180px;
+        font-size: calc(var(--font-size)*0.9);
     }
     .empty-icon{
-        height: 250px;
-        width: 250px;;
+        height: calc(var(--icon-height-size)*0.7);
+        width: calc(var(--width-size)*0.8);
     }
     .empty-name{
-        font-size: 22px;
+        font-size: calc(var(--font-size)*1);
     }
     .item-line{
         width: 500px;
     }
     .empty{
-        height: 250px;
-        width: 250px;
+        height: calc(var(--icon-height-size)*0.7);
+        width: calc(var(--width-size)*0.8);
     }
     .price-empty{
-        font-size: 22px;
+        font-size: calc(var(--font-size)*1);
     }
     .rare{
-        font-size: 22px;
+        font-size: calc(var(--font-size)*1);
     }
     .rar{
-        font-size: 22px;
+        font-size: calc(var(--font-size)*1);
     }
     .treasure{
-        font-size: 22px;
+        font-size: calc(var(--font-size)*1);
     }
     .data{
-        font-size: 22px;
+        font-size: calc(var(--font-size)*1);
     }
     .grid{
         width: 240px;
+    }
+    .item-line{
+        width: calc(var(--width-size)*3);
     }
 }
 /* Модальный (фон) */
