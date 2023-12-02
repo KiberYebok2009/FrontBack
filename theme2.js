@@ -45,12 +45,12 @@ button.onclick = function(){
         image.style.marginTop = "0px";
         body.style.backgroundColor = "white";
         chipizdrik.setAttribute('src', '../images/hzshto.jpg');
-        chipizdrik.style.border = "solid black 5px"
+        chipizdrik.style.border = "solid black calc(var(--font-size)*0.17)"
         for (var i = 0; i < comm.length; ++i) {
             avotar[i].setAttribute('src', '../images/amnyam.webp');
             otziv[i].textContent = "Всё честно";
-            commline[i].style.border = "solid black 5px"
-            otziv[i].style.border = "solid black 5px"
+            commline[i].style.border = "solid black calc(var(--font-size)*0.17)"
+            otziv[i].style.border = "solid black calc(var(--font-size)*0.17)"
         };
     }
     else{
@@ -62,12 +62,12 @@ button.onclick = function(){
         image.style.marginRight = "2vw" ;
         body.style.backgroundColor = "black";
         chipizdrik.setAttribute('src', '../images/boom.gif');
-        chipizdrik.style.border = "solid white 5px"
+        chipizdrik.style.border = "solid white calc(var(--font-size)*0.17)"
         for (var i = 0; i < comm.length; ++i) {
             avotar[i].setAttribute('src', '../images/om nom.jpg');
             otziv[i].textContent = "НАЕБАЛОВО ПОЛНОЕ";
-            commline[i].style.border = "solid white 5px"
-            otziv[i].style.border = "solid white 5px"
+            commline[i].style.border = "solid white calc(var(--font-size)*0.17)"
+            otziv[i].style.border = "solid white calc(var(--font-size)*0.17)"
         };
     }
 }

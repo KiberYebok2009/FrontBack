@@ -1,3 +1,9 @@
+:root{
+    --width-size: calc(10vw + 10vw);
+    --height-size: calc(13vw + 13vw);
+    --icon-height-size: calc(12vw + 12vw);
+    --font-size: calc(1vw + 1vw);
+}
 body{
     margin: 0px;
     background-color:white;
@@ -8,13 +14,13 @@ body{
     background-color: #7A08FA;
     margin: 20px ;
     border-radius: 10px;
-    border: solid black 5px;
+    border: solid black calc(var(--font-size)*0.17);
 }
 .second1{
     background-color: red;
     margin: 20px ;
     border-radius: 10px;
-    border: solid white 5px;
+    border: solid white calc(var(--font-size)*0.17);
 }
 /* ------------------------------------------------ */
 
@@ -59,22 +65,23 @@ body{
     background-color: #7A08FA;
     margin: 20px ;
     border-radius: 10px;
-    border: solid black 5px;
+    border: solid black calc(var(--font-size)*0.17);
 }
 .second2{
     background-color: red;
     margin: 20px ;
     border-radius: 10px;
-    border: solid white 5px;
+    border: solid white calc(var(--font-size)*0.17);
 }
 .main-icon{
     text-align: center;
 }
 .chipizdrik{
-    margin:30px;
-    height: 500px;
-    width: 95%;
-    border: solid black 5px;
+    margin:calc(var(--font-size)*0.17);
+    margin-top: 30px;
+    height: calc(var(--height-size)*2);
+    width: calc(var(--width-size)*4.6);
+    border: solid black calc(var(--font-size)*0.17);
     border-radius: 10px;
 }
 .first3{
@@ -82,14 +89,14 @@ body{
     margin: 20px;
     border-radius: 10px;
     height: 150px;
-    border: solid black 5px;
+    border: solid black calc(var(--font-size)*0.17);
 }
 .second3{
     background-color: red;
     margin: 20px ;
     border-radius: 10px;
     height: 150px;
-    border: solid white 5px;
+    border: solid white calc(var(--font-size)*0.17);
 }
 .comments{
     position: relative;
@@ -105,31 +112,31 @@ body{
 .comm-line{
     display: flex;
     align-items: center;
-    height: 70px;
-    border: solid black 5px;
+    height: calc(var(--height-size)*0.2);
+    border: solid black calc(var(--font-size)*0.17);
     border-radius: 10px;
 }
 .first4{
     color:black;
     background-color: white;
-    height: 300px;
-    width: 220px;
+    height: calc(var(--height-size)*0.75);
+    width: calc(var(--width-size)*0.7);
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
-    border: solid black 5px;
+    border: solid black calc(var(--font-size)*0.17);
 }
 .second4{
     color:white;
     background-image: url('../images/disguise3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
-    width: 220px;
+    height: calc(var(--height-size)*0.75);
+    width: calc(var(--width-size)*0.7);
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
-    border: solid white 5px;
+    border: solid white calc(var(--font-size)*0.17);
 }
 h1{
     text-align: center;
@@ -137,47 +144,81 @@ h1{
     font-weight: 700;
 }
 .avotar{
-    width: 50px;
-    height: 50px;
+    height: calc(var(--height-size)*0.12);
+    width: calc(var(--width-size)*0.15);
     border-radius: 50px;
     border: solid 3px black;
     margin-right: 2vw;
     margin-left: 1vw;
 }
 .nik{
-    font-size: 26px;
+    font-size: calc(var(--font-size)*0.8);
     font-weight: 700;
     font-family: Oswald, sans-serif;
 }
 .comm{
     font-weight: 700;
     text-align: left;
-    font-size: 26px;
+    font-size: calc(var(--font-size)*0.8);
     font-family: Oswald, sans-serif;
     margin-top: 10px;
     padding-left: 1vw;
     border-radius: 10px;
-    border: solid black 5px;
-    height: 200px;
+    border: solid black calc(var(--font-size)*0.17);
+    height: calc(var(--height-size)*0.465);
 }
 html::-webkit-scrollbar{
     width:0px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1150px) {
     .chipizdrik{
-        margin:10px;
+        margin:calc(var(--font-size)*0.17);
+        margin-top: 20px;
+    }
+    .comments{
+        grid-template-columns: repeat(4, 25%);
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+    .comm{
+        height: calc(var(--height-size)*0.465);
+    }
+    .first4{
+        height: calc(var(--height-size)*0.8);
+        width: calc(var(--width-size)*0.8);
+        padding: 10px;
+    }
+    .second4{
+        height: calc(var(--height-size)*0.8);
+        width: calc(var(--width-size)*0.8);
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav{
+        font-size: calc(var(--font-size)*1.5);
+    }
+    .chipizdrik{
+        margin:calc(var(--font-size)*0.17);
+        margin-top: 10px;
     }
     .comments{
         grid-template-columns: repeat(3, 33%);
         padding-right: 4vw;
         padding-left: 4vw;
     }
-    .comment{
-        width: 180px;
-        height: 230px;
+    .comm{
+        height: calc(var(--height-size)*0.8);
+    }
+    .first4{
+        height: calc(var(--height-size)*1.1);
+        width: calc(var(--width-size)*1.1);
         padding: 10px;
     }
-    .comm{
-        height: 130px;
+    .second4{
+        height: calc(var(--height-size)*1.1);
+        width: calc(var(--width-size)*1.1);
+        padding: 10px;
     }
 }
