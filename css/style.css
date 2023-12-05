@@ -4,6 +4,9 @@
     --icon-height-size: calc(12vw + 12vw);
     --font-size: calc(1vw + 1vw);
 }
+*{
+    cursor:url("../images/emblem_32x32.png"),pointer;
+}
 body{
     margin: 0px;
     background-color:white;
