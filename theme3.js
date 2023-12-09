@@ -5,17 +5,24 @@ let footer = document.querySelector('.container-3')
 const image = document.querySelector('.logo');
 let line = document.querySelector('.header-line');
 let body = document.querySelector('body');
-let chipizdrik = document.querySelector('.chipizdrik');
-
+let prichina = document.querySelectorAll('.prichina');
+let pr = document.querySelectorAll('.pr');
+let comm = document.querySelectorAll('.comm');
 
 button.onclick = function(){
     header.classList.toggle('first1')
     main.classList.toggle('first2')
     footer.classList.toggle('first3')
+    for (var i = 0; i < prichina.length; ++i) {
+        prichina[i].classList.toggle('first4');
+    };
 
     header.classList.toggle('second1')
     main.classList.toggle('second2')
     footer.classList.toggle('second3')
+    for (var i = 0; i < prichina.length; ++i) {
+        prichina[i].classList.toggle('second4');
+    };
 
     image.classList.toggle('logo')
 
@@ -24,8 +31,10 @@ button.onclick = function(){
         image.style.borderRadius = "0%";
         image.style.marginTop = "0px";
         body.style.backgroundColor = "white";
-        chipizdrik.setAttribute('src', '../images/hzshto.jpg');
-        chipizdrik.style.border = "solid black calc(var(--font-size)*0.17)"
+        for (var i = 0; i < prichina.length; ++i) {
+            pr[i].style.color = "Black";
+            comm[i].style.color = "Black";
+        };
     }
     else{
         confirm("Ебать хохлов?")
@@ -35,7 +44,9 @@ button.onclick = function(){
         image.style.borderRadius = "50%";
         image.style.marginRight = "2vw" ;
         body.style.backgroundColor = "black";
-        chipizdrik.setAttribute('src', '../images/boom.gif');
-        chipizdrik.style.border = "solid white calc(var(--font-size)*0.17)"
+        for (var i = 0; i < prichina.length; ++i) {
+            pr[i].style.color = "White";
+            comm[i].style.color = "White";
+        };
     }
 }

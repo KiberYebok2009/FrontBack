@@ -76,17 +76,6 @@ body{
     border-radius: 10px;
     border: solid white calc(var(--font-size)*0.17);
 }
-.main-icon{
-    text-align: center;
-}
-.chipizdrik{
-    margin:calc(var(--font-size)*0.17);
-    margin-top: 30px;
-    height: calc(var(--height-size)*2);
-    width: calc(var(--width-size)*4.6);
-    border: solid black calc(var(--font-size)*0.17);
-    border-radius: 10px;
-}
 .first3{
     background-color: #7A08FA;
     margin: 20px;
@@ -107,14 +96,82 @@ h1{
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
+.list{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    padding-right: 4vw;
+    padding-left: 4vw;
+    gap: 10px;
+    top: 10px;
+    margin-bottom:60px;
+    margin-right: calc(var(--width-size)*0.40);
+    margin-left: calc(var(--width-size)*0.55);
+    text-align: center;
+}
+.first4{
+    color:black;
+    background-color: white;
+    height: calc(var(--height-size)*0.75);
+    width: calc(var(--width-size)*0.7);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border: solid black calc(var(--font-size)*0.17);
+    text-align: center;
+}
+.second4{
+    color:black;
+    background-image: url('../images/disguise3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(var(--height-size)*0.75);
+    width: calc(var(--width-size)*0.7);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border: solid white calc(var(--font-size)*0.17);
+    text-align: center;
+}
+.kartinka{
+    height: calc(var(--icon-height-size)*0.4);
+    width: calc(var(--width-size)*0.5);
+    margin: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+.pr{
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(var(--font-size)*0.8);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.comm{
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(var(--font-size)*0.6);
+    margin-top: 10px;
+}
+.rofl{
+    text-decoration: line-through;
+}
+li{
+    font-size: calc(var(--font-size)*0.8);
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
 
 html::-webkit-scrollbar{
     width:0px;
 }
 @media screen and (max-width: 1150px) {
-    .chipizdrik{
-        margin:calc(var(--font-size)*0.17);
-        margin-top: 20px;
+    .pr{
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+    li{
+        font-size: calc(var(--font-size)*1.2);
     }
     
 }
@@ -123,9 +180,12 @@ html::-webkit-scrollbar{
     .nav{
         font-size: calc(var(--font-size)*1.5);
     }
-    .chipizdrik{
-        margin:calc(var(--font-size)*0.17);
-        margin-top: 10px;
+    .comm{
+        margin-top: 5px;
     }
+    li{
+        font-size: calc(var(--font-size)*1.5);
+    }
+    
 
 }
