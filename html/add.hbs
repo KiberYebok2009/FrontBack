@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../add.css">
+    <link rel="icon" href="../images/amnyam.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <title>Добавить новый отзыв</title>
+</head>
+<body>
+    <div class = "header">
+        <div class = "container-1 first1">
+            <div class = "header-line">
+                <button class = "btn" type="button">
+                    <div class = "header-logo">
+                        <img class = "logo" src="../images/amnyam.webp" alt="">
+                    </div>
+                </button>
+                <div class = "nav-bar">
+                    <a class = "nav" href="/">Каталог</a>
+                    <a class = "nav" href="/about/">Отзывы(не накрученные)</a>
+                    <a class = "nav" href="/kak/">Как это работает</a>
+                </div>
+                <div class = "cart">
+                    <a href="#">
+                        <img class = "cart-icon" src="../images/invalid.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "main">
+        <div class = "container-2 first2">
+            <div class="new-comm">Новый отзыв</div>
+            <form action="postItem" method="POST">
+                <table>
+                    <tr>
+                        <td><div class="label">Ваше имя</div></td>
+                        <td><input name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><div class="label">Оценка(0-5)</div></td>
+                        <td><input name="cost" type="number" min = "0" max = "5"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><div class="label-sub"><input type="submit" value="Отправить"></div></td>
+                    </tr>
+                </table>
+            </form>
+            <div class = "return"><a href="/about">Вернуться к отзывам</a></div>
+        </div>
+    </div>
+
+    <div class = "footer">
+        <div class = "container-3 first3">
+
+        </div>
+    </div>
+    <script src="../JS/theme4.js"></script>
+</body>
+</html>
