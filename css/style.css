@@ -484,6 +484,7 @@ html::-webkit-scrollbar{
 
   /* Модальное содержание/коробка */
 .modal-content {
+    top:100px;
     background-color: #fefefe;
     margin: 15% auto; /* 15% сверху и по центру */
     padding: 20px;
@@ -508,5 +509,5 @@ html::-webkit-scrollbar{
   /* Добавить анимация */
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+    to {top: 100px; opacity: 1}
 }
