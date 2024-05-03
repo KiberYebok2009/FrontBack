@@ -5,7 +5,7 @@
     --font-size: calc(1vw + 1vw);
 }
 *{
-    cursor:url("../images/emblem_32x32.png"),pointer;
+    cursor:url("../images/emblem_32x32.png") 16 16,pointer;
 }
 body{
     margin: 0px;
@@ -186,7 +186,7 @@ body{
 .empty-icon{
     height: calc(var(--icon-height-size)*0.7);
     width: calc(var(--width-size)*0.8);
-    border: solid black calc(var(--font-size)*0.2);
+    border: solid black calc(var(--font-size)*0.17);
     margin-right: calc(var(--width-size)*0.1);
     border-radius: 10px;
 }
@@ -232,6 +232,9 @@ body{
     font-size: calc(var(--font-size)*1);
     margin-top: 0px;
     margin-bottom: 10px;
+}
+.rare-line{
+    display: flex;
 }
 .treasure{
     text-align: left;
@@ -472,6 +475,8 @@ html::-webkit-scrollbar{
     padding: 2px 16px;
     background-color: #7A08FA;
     color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
   /* Модальный нижний колонтитул */
 
@@ -480,6 +485,8 @@ html::-webkit-scrollbar{
     padding: 2px 16px;
     background-color: #7A08FA;
     color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
   /* Модальное содержание/коробка */
@@ -489,7 +496,7 @@ html::-webkit-scrollbar{
     margin: 15% auto; /* 15% сверху и по центру */
     padding: 20px;
     border: 1px solid black;
-    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+    width: 50%; /* Может быть больше или меньше, в зависимости от размера экрана */
     text-align: center;
 }
   
@@ -500,10 +507,12 @@ html::-webkit-scrollbar{
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    border-radius: 10px;
+    border: solid black calc(var(--font-size)*0.17);
 }
   
   /* Добавить анимация */
